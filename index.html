@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wenyi Zhang</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">HOME</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#hobbies" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HOBBIES</a>          
+          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCES</a>
+          <a href="#Project" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EDUCATION</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+   
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="self1.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <i data-feather="facebook"></i>
+          </a> -->
+          <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i> -->
+          <!-- </a> -->
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://twitter.com/Mortyzhang0311" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/wenyi0311/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./ZhangWenyi_CV.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
+
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#hobbies" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HOBBIES</a>          
+          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCES</a>
+          <a href="#Project" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EDUCATION</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+   
+
+        </div>
+
+<style>        
+    .inline {
+      display: inline;
+    }
+
+    .red-text {
+      color: red;
+    }
+    
+    .blue-text {
+      color: blue;
+    }
+
+    .left-align {
+      float: left;
+    }
+
+    .right-align {
+      float: right;
+    }
+</style>
+
+
+
+
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <!-- <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p> -->
+            <h1 style="text-align: center;"> Wenyi Zhang (Morty)</h2>
+            <!-- <h2>张文逸</h3> -->
+            <!-- <p>Wenyi Zhang (Morty)</p> -->
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3>
+            <p class="w3-margin-top-2"> 
+            Hi! I am a visiting student now in the NetSAIL Lab & EECS at the University of California, Irvine, advised by <a class="blue-text" href="https://www.ics.uci.edu/~sabdujyo/">Prof. Sangeetha Abdu Jyothi</a>.
+            In Fall 2023, I will join the M.S. in ECE at the University of California, San Diego. 
+            Before that, I got the B.E. in Computer Engineering from The Chinese University of Hong Kong, Shenzhen. At CUHKSZ, I worked in INML Lab, advised by <a class="blue-text" href="https://mypage.cuhk.edu.cn/academics/wangfangxin/">Prof. Fangxin Wang</a>. 
+            My research interests lie at the intersection of computer systems, networking, and machine learning.         
+          </div>
+
+          <!---EDUCATION SECTION-->
+          <div id="Education" class="w3-container w3-margin-top-2 w3-cursive">
+            <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">EDUCATION</h3> 
+              <h4>M.S. in ECE, University of California, San Diego.</h4>
+              <p>September 2023 - till now </p>
+              <h4>Visiting student in EECS, University of California, Irvine.</h4>
+              <p>September 2022 - June 2023 </p>
+              <h4>B.E. in ECE, The Chinese University of Hong Kong, Shenzhen.</h4>
+              <p>September 2019 - June 2023 </p>             
+          </div>
+
+
+          <div id="Project" class="w3-container w3-margin-top-2 w3-cursive">
+            <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PUBLICATION & PREPRINTS</h3> 
+              <h4 class="inline red-text">[VR'23]</h4> <h5 class="inline"><strong>CaV3: Cache-assisted Viewport Adaptive Volumetric Video Streaming.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://ieeexplore.ieee.org/document/10108421" target="_blank">link</a> 
+              <h5>Junhua Liu, Boxiang Zhu, Fangxin Wang, Yili Jin, <strong>Wenyi Zhang</strong>, Zihan Xu, Shuguang Cui.</h5>                      
+          
+<br>
+<br>
+              <h4 class="inline red-text">[Preprint]</h4> <h5 class="inline"><strong>An In-Depth Investigation of LEO Satellite Topology Design Parameters.</strong> </h5>
+              <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/abs/2303.15486" target="_blank">link</a>  -->
+              <h5><strong>Wenyi Zhang</strong>, Zihan Xu, Sangeetha Abdu Jyothi.</h5>                      
+                    
+
+              <h4 class="inline red-text">[Preprint]</h4> <h5 class="inline"><strong>Unimodal Training-Multimodal Prediction: Cross-modal Federated Learning with Hierarchical Aggregation.</strong> </h5>
+              <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/abs/2303.15486" target="_blank">link</a> 
+              <h5>Rongyu Zhang, Xiaowei Chi, Guiliang Liu, <strong>Wenyi Zhang</strong>, Yuan Du, Fangxin Wang.</h5>                      
+                    
+              <h4 class="inline red-text">[Preprint]</h4> <h5 class="inline"><strong>Viewport-Aware Adaptive Volumetric Video Streaming.</strong> </h5>
+              <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/abs/2303.15486" target="_blank">link</a>  -->
+              <h5><strong>Wenyi Zhang</strong>, Zihan Xu, Yili Jin, Junhua Liu, Fangxin Wang.</h5>                      
+                  
+              <h4 class="inline red-text">[Preprint]</h4> <h5 class="inline"><strong>Exploring Gaze Behavior in 360-Degree Videos: Dataset and Multimodal Attentive FoV Prediction.</strong> </h5>
+              <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/abs/2303.15486" target="_blank">link</a>  -->
+              <h5>Yilin Jin, <strong>Wenyi Zhang</strong>, Zihan Xu, Junhua Liu, Fangxin Wang, Shuguang Cui.</h5>   
+
+              <h4 class="inline red-text">[Preprint]</h4> <h5 class="inline"><strong>Proffler: Towards Collaborative and Scalable Edge-Assisted Crowdsourced Livecast.</strong> </h5>
+              <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/abs/2303.15486" target="_blank">link</a>  -->
+              <h5><strong>Wenyi Zhang</strong>, Zihan Xu, Fangxin Wang, Jiangchuan Liu.</h5>   
+
+
+
+          </div>
+
+
+          <!--Experience SECTION-->
+          <div id="experience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">EXPERIENCES</h3>
+              <div class="">
+                <h4 class="inline">NetSAIL Lab at UC Irvine</h4>  <p class="inline">------------------------------------------ Sep. 2022 - Present</p>
+                <ul class="w3-ul" style="font-weight: 300;">
+                  <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+                  <li>Built relations with the online community</li> -->
+                  <li>Research Assistant, advised by <a class="blue-text" href="https://www.ics.uci.edu/~sabdujyo/">Prof. Sangeetha Abdu Jyothi.</a></li>
+                </ul>
+          </div>
+
+          <div class="">
+            <h4 class="inline">NetX Lab at CUHK</h4>  <p class="inline">--------------------------------------------------- June. 2023 - Present</p>
+            <ul class="w3-ul" style="font-weight: 300;">
+              <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+              <li>Built relations with the online community</li> -->
+              <li>Visiting Student, advised by <a class="blue-text" href="https://henryhxu.github.io/">Prof. Hong Xu, Henry.</a></li>
+            </ul>
+          </div>
+
+          <div class="">
+            <h4 class="inline">INML Lab at CUHKSZ</h4>  <p class="inline">--------------------------------------------- Dec. 2020 - Sep. 2022</p>
+            <ul class="w3-ul" style="font-weight: 300;">
+              <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+              <li>Built relations with the online community</li> -->
+              <li>Research Assistant, advised by <a class="blue-text" href="https://mypage.cuhk.edu.cn/academics/wangfangxin/">Prof. Fangxin Wang.</a></li>
+              </ul>
+           </div>
+
+          <div class="">
+            <h4 class="inline">AIRS at Shenzhen</h4>  <p class="inline">-------------------------------------------------- June. 2021 - Sep. 2021</p>
+            <ul class="w3-ul" style="font-weight: 300;">
+              <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+              <li>Built relations with the online community</li> -->
+              <li>Teaching Assistant</li>
+              </ul>
+           </div>
+
+          </div>
+
+
+
+          <!-- RESUME -->
+          <!-- <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h3>
+            <div class="w3-container w3-margin-top-2 w3-cursive"> -->
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <!-- <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <div class="">
+                <h4>Community Manager at the Company-X</h4>
+                <p>September 2020 - Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+                  <li>Built relations with the online community</li>
+                  <li>Implemented social media strategies to increase engagement and followers</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Y</h4>
+                <p>January 2017 - June 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that audience growth rate is in increase through social networs</li>
+                  <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
+                  <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Social Community Manager at the Company-Z</h4>
+                <p>January 2014 - April 2016 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Organized and managed community events to boost brand awareness</li>
+                  <li>Monitored, tracked and reported on feedback and online reviews</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+              </div>
+            </div> -->
+
+
+
+            <!--SKILLS SECTION-->
+            <!-- <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">SKILLS</h3> -->
+              <!--SOFT SKILLS-->
+              <!-- <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>I have excelent communication skill and confidence in front of an audience</li>
+                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <!-- <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I have a great experience with MS Office tools</li>
+                  <li>I am proficient in technical writing</li>
+                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+                </ul>
+            </div> --> 
+
+            <!--INTERESTS SECTION-->
+            <div id="hobbies" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I am a crazy basketball & billiards fan. I also love watching NBA games——"Go Clippers, Champions!".</li>
+                  <li>I also like the cartoon《Rick & Morty》, which is also where my English name came from.</li>
+                </ul>
+
+          <div class="image-container">
+            <img src="funny1.jpg" alt="Image 1" style="width: 200px; height: 200px;">
+            <img src="funny2.jpg" alt="Image 2" style="width: 200px; height: 200px;">
+            <img src="funny3.png" alt="Image 3" style="width: 200px; height: 200px;">
+
+
+
+            </div>
+
+            <!-- REFERENCE SECTION
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Jane Doe, CEO at Company-Z</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>janedoe@companyz.com</li>
+              </ul>
+              <h4>Margaret Johnson, Manager at Company-Y</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+9876543210</li>
+                <li>mjohnson@companyy.com</li>
+              </ul>
+            </div>            
+          </div> -->
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Wenyi Zhang (Morty)</p>
+              <p>Adress: University of California, Irvine, CA 92697</p>
+              <p>Phone number: +1 (949) 594-6417</p>
+              <p>E-mail: wez049@ucsd.edu</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. --> 
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023.5 - Wenyi Zhang</p>
+          <p class="w3-small">I am immensely grateful for the unwavering support of my family, friends, and teachers！</p>
+          <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>  --> 
+        <!-- End footer --> 
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
