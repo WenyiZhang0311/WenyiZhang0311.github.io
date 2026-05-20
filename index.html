@@ -8,179 +8,231 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
-  
-    <!-- Google Analytics tracking code -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E01MYK6N92"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-E01MYK6N92');
-  </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E01MYK6N92"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E01MYK6N92');
+    </script>
 
-  
+    <style>
+      .inline {
+        display: inline;
+      }
+
+      .red-text {
+        color: red;
+        text-decoration: none;
+      }
+
+      .gold-text {
+        color: orange;
+        text-decoration: none;
+      }
+
+      .green-text {
+        color: green;
+        text-decoration: none;
+      }
+
+      .blue-text {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .nav-link {
+        border-width: 2px !important;
+      }
+
+      .profile-photo {
+        border-width: 3px !important;
+      }
+
+      .section-heading {
+        border-width: 3px !important;
+      }
+
+      .section-title {
+        align-items: center;
+        border-width: 3px !important;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .download-icon {
+        vertical-align: -0.35em;
+      }
+
+      .section-filter {
+        display: inline-flex;
+        gap: 8px;
+      }
+
+      .section-filter-button {
+        border: 1px solid #f0b429;
+        background: #ffffff;
+        color: #262626;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 4px 12px;
+      }
+
+      .section-filter-button.active,
+      .section-filter-button:hover {
+        background: #f0b429;
+        color: #ffffff;
+      }
+
+      .news-entry.hidden,
+      .publication-entry.hidden {
+        display: none;
+      }
+
+      .publication-entry {
+        margin-bottom: 28px;
+      }
+
+      .contact-info {
+        font-weight: 500;
+      }
+
+      .medium-list {
+        font-weight: 500;
+      }
+
+      .light-list {
+        font-weight: 300;
+      }
+
+      .hobby-image {
+        width: 200px;
+        height: 200px;
+      }
+
+      .cluster-map {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 600px) {
+        .section-filter {
+          display: flex;
+          margin-top: 12px;
+        }
+
+        .section-title {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
   </head>
 
 
   <body>   
     <section>
-      <!-- MOBILE NAVIGATION -->
       <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
         <a href="#home" class="w3-bar-item w3-button w3-hover-none">HOME</a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
       </div>
       <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-
-          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-          <a href="#hobbies" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HOBBIES</a>          
-          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCES</a>
-          <a href="#Project" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
-          <a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EDUCATION</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
-           <a href="#news" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">NEWS</a>
+          <a href="#contact" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#hobbies" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">HOBBIES</a>
+          <a href="#experience" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">EXPERIENCES</a>
+          <a href="#Project" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#Education" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">EDUCATION</a>
+          <a href="#about" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">ABOUT</a>
+          <a href="#news" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">NEWS</a>
       </div>
 
-      <!-- SOCIAL SECTION -->
       <section class="image-section w3-quarter w3-fixed w3-padding-small">
-        <!--IMAGE/AVATAR-->
-        <img src="self1.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
-        <!--SCIAL NETWORK BUTTONS-->
+        <img src="self1.jpg" class="profile-photo w3-circle w3-border w3-border-sand" alt="Wenyi Zhang profile photo"/>
         <div class="links w3-margin-top w3-padding-small">
-          <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
-              <i data-feather="facebook"></i>
-          </a> -->
-          <!-- <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
-             <i data-feather="instagram"></i> -->
-          <!-- </a> -->
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://twitter.com/Mortyzhang0311" target="_blank">
              <i data-feather="twitter"></i>
           </a>
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/wenyi0311/" target="_blank">
              <i data-feather="linkedin"></i>
           </a>
-          <!-- Email Icon -->
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="mailto:wez049@ucsd.edu">
               <i data-feather="mail"></i>
           </a>
-          
-          <!-- Google Scholar Icon -->
-          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://scholar.google.com/citations?user=0askc_YAAAAJ&hl=zh-CN" target="_blank">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://scholar.google.com/citations?user=0askc_YAAAAJ&amp;hl=zh-CN" target="_blank">
               <i data-feather="book-open"></i>
           </a>
-
-
         </div>
-        <!--CV DOWNLOAD BUTTON-->
         <div class="w3-container w3-padding-16">
           <a href="./ZhangWenyi_CV.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
-            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <i class="download-icon" data-feather="arrow-down"></i>
             <span class="w3-margin-left download-text">DOWNLOAD CV</span>
           </a>
         </div>
       </section>
 
-      <!--CV CONTENT SECTION-->
       <section class="w3-threequarter w3-padding-large w3-right">
-        <!--DESKTOP NAVIGATION-->
         <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
           <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
-
-          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-          <a href="#hobbies" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HOBBIES</a>          
-          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCES</a>
-          <a href="#Project" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
-          <a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EDUCATION</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
-   
-
+          <a href="#contact" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#hobbies" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">HOBBIES</a>
+          <a href="#experience" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">EXPERIENCES</a>
+          <a href="#Project" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#Education" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">EDUCATION</a>
+          <a href="#about" class="nav-link w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" onclick="toggleNavigation()">ABOUT</a>
         </div>
 
-<style>        
-    .inline {
-      display: inline;
-    }
-
-    .red-text {
-      color: red;
-      text-decoration: none;
-    }
-
-    .gold-text {
-      color: orange;
-      text-decoration: none;
-    }
-    
-    .green-text {
-      color: green;
-      text-decoration: none;
-    }
-
-    .blue-text {
-      color: blue;
-      text-decoration: none;
-    }
-
-    .left-align {
-      float: left;
-    }
-
-    .right-align {
-      float: right;
-    }
-</style>
-
-
-
-
         <div class="content-container w3-margin-top-2">
-          <!--HOME SECTION-->
           <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
-            <!-- <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p> -->
-            <h1 style="text-align: center;"> Wenyi Zhang (Morty)</h2>
-            <!-- <h2>张文逸</h3> -->
-            <!-- <p>Wenyi Zhang (Morty)</p> -->
+            <h1>Wenyi Zhang (Morty)</h1>
           </div>
 
-          <!--ABOUT SECTION-->
           <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3>
-            <p class="w3-margin-top-2"> 
-            Hi! I am a first-year Ph.D. Student in CSE at the University of California, San Diego, advised by <a class="blue-text" href="https://cseweb.ucsd.edu/~schulman/">Prof. Aaron Schulman</a>. 
-            I'm also honored to work closely with <a class="blue-text" href="https://dineshb-ucsd.github.io/">Prof. Dinesh Bharadia</a>, <a class="blue-text" href="https://cseweb.ucsd.edu/~nadiah/">Prof. Nadia Heninger</a>, and <a class="blue-text" href="https://www.cs.umd.edu/~dml/">Prof. Dave Levin</a> .
-            Before that, I was a visiting student in the NetSAIL Lab & EECS at the University of California, Irvine, advised by <a class="blue-text" href="https://www.ics.uci.edu/~sabdujyo/">Prof. Sangeetha Abdu Jyothi</a>.
-            I got the B.E. in Computer Engineering from The Chinese University of Hong Kong, Shenzhen, worked in INML Lab, advised by <a class="blue-text" href="https://mypage.cuhk.edu.cn/academics/wangfangxin/">Prof. Fangxin Wang</a>. 
-            My research interests lie at the intersection of computer systems, wireless & networking, satellite network, and machine learning.         
+            <h3 class="section-heading w3-border-bottom w3-border-amber">ABOUT</h3>
+            <p class="w3-margin-top-2">
+              Hi! I am a first-year Ph.D. Student in CSE at the University of California, San Diego, advised by <a class="blue-text" href="https://cseweb.ucsd.edu/~schulman/">Prof. Aaron Schulman</a>.
+              I'm also honored to work closely with <a class="blue-text" href="https://dineshb-ucsd.github.io/">Prof. Dinesh Bharadia</a>, <a class="blue-text" href="https://cseweb.ucsd.edu/~nadiah/">Prof. Nadia Heninger</a>, and <a class="blue-text" href="https://www.cs.umd.edu/~dml/">Prof. Dave Levin</a>.
+              Before that, I was a visiting student in the NetSAIL Lab &amp; EECS at the University of California, Irvine, advised by <a class="blue-text" href="https://www.ics.uci.edu/~sabdujyo/">Prof. Sangeetha Abdu Jyothi</a>.
+              I got the B.E. in Computer Engineering from The Chinese University of Hong Kong, Shenzhen, worked in INML Lab, advised by <a class="blue-text" href="https://mypage.cuhk.edu.cn/academics/wangfangxin/">Prof. Fangxin Wang</a>.
+              My research interests lie at the intersection of computer systems, wireless &amp; networking, satellite network, and machine learning.
+            </p>
           </div>
 
-
-            <!-- NEWS SECTION -->
-            <div id="news" class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">NEWS</h3>
-              <ul class="w3-ul" style="font-weight: 500;">
-
-                <li>[02/05/2026] We are happy to share that our <strong>“Don't Look Up”</strong> team was named <strong>Finalists for the Research Impact Award</strong> at the <a class="green-text" href="https://cns.ucsd.edu/highlighting-research-impact-in-cyber-policy/"><strong><i>Third Annual Cyber Policy Awards</i></strong></a>.</li>
-                <li>[10/13/2025] Our research on GEO satellite security was featured as a top story on the front page of <a class="green-text" href="https://www.wired.com/story/satellites-are-leaking-the-worlds-secrets-calls-texts-military-and-corporate-data/"><strong><i>WIRED</i></strong></a> by Andy Greenberg and Matt Burgess, and it also reached the <strong>#1</strong> spot on <a class="green-text" href="https://news.ycombinator.com/item?id=45575391"><strong>Hacker News</strong></a>. We are also honored that this work received the <strong>2025 ACM CCS Distinguished Paper Award</strong> 🏆.</li>
-                <li>[07/01/2025] Our Paper "Don't Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites." is accepted by <strong>ACM CCS '25</strong>, see yall in Taipei!🎉</li>
-                <li>[05/02/2025] Our paper on Multimodal Federated Learning got accepted by <strong>IEEE Transactions on Mobile Computing</strong>.</li>
-                <li>[03/11/2025] Invited Talk at <strong>IETF 122 Bangkok</strong> about "A Deep Dive into LEO Satellite Topology Design Parameters."🎉</li>
-                <li>[11/14/2024] Our paper on LEO Satellite Networks got accepted at <strong>PAM '25</strong>! 🎉</li>
-                <li>[09/04/2024] Two papers got accepted by <strong>LEO-NET '24</strong> (Co-located with MobiCom'24).</li>
-                <li>[08/27/2024] Our paper on Privacy-Preserving Gaze-Assisted Immersive Video Streaming got accepted by <strong>IEEE Transactions on Mobile Computing</strong>.</li>
-              </ul>
+          <div id="news" class="w3-container w3-margin-top-2 w3-cursive">
+            <div class="section-title w3-border-bottom w3-border-amber">
+              <h3>NEWS</h3>
+              <span class="section-filter" aria-label="News filter">
+                <button class="section-filter-button news-filter-button active" type="button" onclick="setNewsFilter('recent', this)">Recent</button>
+                <button class="section-filter-button news-filter-button" type="button" onclick="setNewsFilter('all', this)">All</button>
+              </span>
             </div>
-
-          
-
+            <ul class="medium-list w3-ul">
+              <li class="news-entry">[05/15/2026] Invited talk for our <strong>Don't Look Up</strong> paper at <a class="green-text" href="https://www.qualcomm.com/company/events/product-security-summit"><strong><i>Qualcomm Product Security Summit 2026</i></strong></a>.</li>
+              <li class="news-entry">[05/11/2026] Guest lecture for our <strong>Don't Look Up</strong> paper at <strong>UCLA</strong>, invited by <a class="green-text" href="https://lizizhikevich.github.io/"><strong>Prof. Liz Izhikevich</strong></a>.</li>
+              <li class="news-entry">[05/06/2026] Invited talk at <a class="green-text" href="https://amw.org/amw-52-program/"><strong><i>AMW 52</i></strong></a> in beautiful Asilomar, Monterey.</li>
+              <li class="news-entry">[02/05/2026] We are happy to share that our <strong>“Don't Look Up”</strong> team was named <strong>Finalists for the Research Impact Award</strong> at the <a class="green-text" href="https://cns.ucsd.edu/highlighting-research-impact-in-cyber-policy/"><strong><i>Third Annual Cyber Policy Awards</i></strong></a>.</li>
+              <li class="news-entry">[10/13/2025] Our research on GEO satellite security was featured as a top story on the front page of <a class="green-text" href="https://www.wired.com/story/satellites-are-leaking-the-worlds-secrets-calls-texts-military-and-corporate-data/"><strong><i>WIRED</i></strong></a> by Andy Greenberg and Matt Burgess, and it also reached the <strong>#1</strong> spot on <a class="green-text" href="https://news.ycombinator.com/item?id=45575391"><strong>Hacker News</strong></a>. We are also honored that this work received the <strong>2025 ACM CCS Distinguished Paper Award</strong> 🏆.</li>
+              <li class="news-entry">[07/01/2025] Our Paper "Don't Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites." is accepted by <strong>ACM CCS '25</strong>, see yall in Taipei!🎉</li>
+              <li class="news-entry">[05/02/2025] Our paper on Multimodal Federated Learning got accepted by <strong>IEEE Transactions on Mobile Computing</strong>.</li>
+              <li class="news-entry">[03/11/2025] Invited Talk at <strong>IETF 122 Bangkok</strong> about "A Deep Dive into LEO Satellite Topology Design Parameters."🎉</li>
+              <li class="news-entry">[11/14/2024] Our paper on LEO Satellite Networks got accepted at <strong>PAM '25</strong>! 🎉</li>
+              <li class="news-entry">[09/04/2024] Two papers got accepted by <strong>LEO-NET '24</strong> (Co-located with MobiCom'24).</li>
+              <li class="news-entry">[08/27/2024] Our paper on Privacy-Preserving Gaze-Assisted Immersive Video Streaming got accepted by <strong>IEEE Transactions on Mobile Computing</strong>.</li>
+            </ul>
+          </div>
 
           <div id="Project" class="w3-container w3-margin-top-2 w3-cursive">
-            <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
-            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PUBLICATION & PREPRINTS</h3> 
+            <div class="section-title w3-border-bottom w3-border-amber">
+              <h3>PUBLICATION &amp; PREPRINTS</h3>
+              <span class="section-filter" aria-label="Publication filter">
+                <button class="section-filter-button publication-filter-button active" type="button" onclick="setPublicationFilter('selected', this)">Selected</button>
+                <button class="section-filter-button publication-filter-button" type="button" onclick="setPublicationFilter('all', this)">All</button>
+              </span>
+            </div>
 
+            <div class="publication-entry" data-publication-topic="other">
               <h4 class="inline red-text">[Preprint]</h4>
               <h5 class="inline">
                 <strong>
@@ -191,11 +243,9 @@
 
               <h5>Wenhao Chen, <strong>Wenyi Morty Zhang</strong>, Wei Sun, Dinesh Bharadia, Roshan Ayyalasomayajula.</h5>
               <h5><em>Preprint</em></h5>
+            </div>
 
-<br>
-<br> 
-
-
+            <div class="publication-entry" data-publication-topic="satellite">
               <h4 class="inline red-text">[ACM CCS '25]</h4>
               <h5 class="inline">
                 <strong>
@@ -211,8 +261,9 @@
 
               <h5><strong>Wenyi Morty Zhang</strong>, Annie Dai, Keegan Ryan, Dave Levin, Nadia Heninger, Aaron Schulman.</h5>  
               <h5><em>the 32nd ACM Conference on Computer and Communications Security (CCS-25)</em></h5>
+            </div>
 
-
+            <div class="publication-entry" data-publication-topic="other">
               <h4 class="inline red-text">[TMC '25]</h4> 
               <h5 class="inline">
                 <strong>
@@ -223,9 +274,9 @@
 
               <h5>Rongyu Zhang, Xiaowei Chi, <strong>Wenyi Zhang</strong>, Guiliang Liu, Yuan Du, Fangxin Wang.</h5>  
               <h5><em>IEEE Transactions on Mobile Computing (TMC)</em></h5>
+            </div>
 
-
-
+            <div class="publication-entry" data-publication-topic="satellite">
               <h4 class="inline red-text">[PAM '25]</h4> 
               <h5 class="inline">
                 <strong>
@@ -236,11 +287,9 @@
 
               <h5><strong>Wenyi Morty Zhang*</strong>, Zihan Xu*, Sangeetha Abdu Jyothi.</h5> 
               <h5><em>the 26th Annual Passive and Active Measurement Conference. (PAM-25)</em></h5> 
+            </div>
 
-<br>
-<br> 
-            
-
+            <div class="publication-entry" data-publication-topic="satellite">
               <h4 class="inline red-text">[LEO-NET '24]</h4> 
               <h5 class="inline">
                 <strong>
@@ -251,7 +300,9 @@
 
               <h5><strong>Wenyi Zhang*</strong>, Zihan Xu*, Sangeetha Abdu Jyothi.</h5> 
               <h5><em>2024 ACM Workshop on LEO Networking and Communication, collocated with Mobicom' 24 (LEO-NET-24)</em></h5> 
+            </div>
 
+            <div class="publication-entry" data-publication-topic="satellite">
               <h4 class="inline red-text">[LEO-NET '24]</h4> 
               <h5 class="inline">
                 <strong>
@@ -262,7 +313,9 @@
 
               <h5> Zhuoyuan Li*, <strong>Wenyi Morty Zhang*</strong>, Wenhao Chen, Yiyan Hu, Weyl Lu.</h5>
               <h5><em>2024 ACM Workshop on LEO Networking and Communication, collocated with Mobicom' 24 (LEO-NET-24)</em></h5>
+            </div>
             
+            <div class="publication-entry" data-publication-topic="other">
               <h4 class="inline red-text">[TMC '24]</h4> 
               <h5 class="inline">
                 <strong>
@@ -273,10 +326,9 @@
 
               <h5>Yilin Jin, <strong>Wenyi Zhang</strong>, Zihan Xu, Junhua Liu, Fangxin Wang, Shuguang Cui.</h5>
               <h5><em>IEEE Transactions on Mobile Computing (TMC)</em></h5>
-
-<br>
-<br> 
+            </div>
             
+            <div class="publication-entry" data-publication-topic="other">
               <h4 class="inline red-text">[IoTJ '23]</h4> 
               <h5 class="inline">
                 <strong>
@@ -287,8 +339,9 @@
 
               <h5><strong>Wenyi Zhang*</strong>, Zihan Xu*, Fangxin Wang, Jiangchuan Liu.</h5>   
               <h5><em>IEEE Internet of Things Journal (IoTJ)</em></h5>
-              
-              
+            </div>
+
+            <div class="publication-entry" data-publication-topic="other">
               <h4 class="inline red-text">[VR '23]</h4>
               <h5 class="inline">
                 <strong>
@@ -299,17 +352,11 @@
 
               <h5>Junhua Liu, Boxiang Zhu, Fangxin Wang, Yili Jin, <strong>Wenyi Zhang</strong>, Zihan Xu, Shuguang Cui.</h5>
               <h5><em>the 30th IEEE Conference on Virtual Reality and 3D User Interfaces (VR-23) </em></h5>
-          
-<br>
-
+            </div>
           </div>
 
-
-
-          <!---EDUCATION SECTION-->
           <div id="Education" class="w3-container w3-margin-top-2 w3-cursive">
-            <!-- <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h3> -->
-            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">EDUCATION</h3> 
+            <h3 class="section-heading w3-border-bottom w3-border-amber">EDUCATION</h3>
               <h4>Ph.D. Student in CSE, University of California, San Diego.</h4>
               <p>September 2025 - Now </p>
               <h4>M.S. in ECE, University of California, San Diego.</h4>
@@ -320,165 +367,73 @@
               <p>September 2019 - June 2023 </p>             
           </div>
 
-
-          <!--Experience SECTION-->
           <div id="experience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">EXPERIENCES</h3>
-             <div class="">
+            <h3 class="section-heading w3-border-bottom w3-border-amber">EXPERIENCES</h3>
+             <div>
                 <h4 class="inline"><a class="blue-text" href="https://www.sysnet.ucsd.edu/sysnet/">SysNet Lab</a> at UC San Diego</h4>  <p class="inline">---------------- Oct. 2023 - Present</p>
-                 <ul class="w3-ul" style="font-weight: 300;">
+                 <ul class="light-list w3-ul">
                  <li>Research Assistant, advised by <a class="blue-text" href="https://cseweb.ucsd.edu/~schulman/">Prof. Aaron Schulman</a></li>
                 </ul> 
           </div>
             
-              <div class="">
+              <div>
                 <h4 class="inline">NetSAIL Lab at UC Irvine</h4>  <p class="inline">---------------------------------------- Sep. 2022 - Sep. 2023</p>
-                <ul class="w3-ul" style="font-weight: 300;">
-                  <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
-                  <li>Built relations with the online community</li> -->
+                <ul class="light-list w3-ul">
                   <li>Research Assistant, advised by <a class="blue-text" href="https://www.ics.uci.edu/~sabdujyo/">Prof. Sangeetha Abdu Jyothi.</a></li>
                 </ul>
           </div>
 
-          <div class="">
+          <div>
             <h4 class="inline">INML Lab at CUHKSZ</h4>  <p class="inline">--------------------------------------------- Dec. 2020 - Sep. 2022</p>
-            <ul class="w3-ul" style="font-weight: 300;">
-              <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
-              <li>Built relations with the online community</li> -->
+            <ul class="light-list w3-ul">
               <li>Research Assistant, advised by <a class="blue-text" href="https://mypage.cuhk.edu.cn/academics/wangfangxin/">Prof. Fangxin Wang.</a></li>
               </ul>
            </div>
 
-          <div class="">
+          <div>
             <h4 class="inline">AIRS at Shenzhen</h4>  <p class="inline">-------------------------------------------------- June. 2021 - Sep. 2021</p>
-            <ul class="w3-ul" style="font-weight: 300;">
-              <!-- <li>Ensured that published content meets brand guidelines and overall communication styles</li>
-              <li>Built relations with the online community</li> -->
+            <ul class="light-list w3-ul">
               <li>Teaching Assistant</li>
               </ul>
            </div>
 
           </div>
 
+          <div id="hobbies" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h3 class="section-heading w3-border-bottom w3-border-amber">HOBBIES AND INTERESTS</h3>
+            <ul class="medium-list w3-ul">
+              <li>I am a crazy basketball &amp; billiards fan. I also love watching NBA games——"Go Clippers, Champions!".</li>
+              <li>I like the cartoon《Rick &amp; Morty》, which is also where my English name came from.</li>
+            </ul>
 
-
-          <!-- RESUME -->
-          <!-- <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h3>
-            <div class="w3-container w3-margin-top-2 w3-cursive"> -->
-
-              <!--EMPLOYMENT HISTORY SECTION-->
-              <!-- <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
-              <div class="">
-                <h4>Community Manager at the Company-X</h4>
-                <p>September 2020 - Present</p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Ensured that published content meets brand guidelines and overall communication styles</li>
-                  <li>Built relations with the online community</li>
-                  <li>Implemented social media strategies to increase engagement and followers</li>
-                </ul>
-              </div>
-              <div class="">
-                <h4>Social Community Manager at the Company-Y</h4>
-                <p>January 2017 - June 2020 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Ensured that audience growth rate is in increase through social networs</li>
-                  <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
-                  <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
-                </ul>
-              </div>
-              <div class="">
-                <h4>Social Community Manager at the Company-Z</h4>
-                <p>January 2014 - April 2016 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Organized and managed community events to boost brand awareness</li>
-                  <li>Monitored, tracked and reported on feedback and online reviews</li>
-                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
-                </ul>
-              </div>
-            </div> -->
-
-
-
-            <!--SKILLS SECTION-->
-            <!-- <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">SKILLS</h3> -->
-              <!--SOFT SKILLS-->
-              <!-- <h4>Soft skills</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>I have excelent communication skill and confidence in front of an audience</li>
-                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
-                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
-              </ul>
-              <!--TECHNICAL SKILLS-->
-              <!-- <h4>Technical skills</h4>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>I have a great experience with MS Office tools</li>
-                  <li>I am proficient in technical writing</li>
-                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
-                </ul>
-            </div> --> 
-
-            <!--INTERESTS SECTION-->
-            <div id="hobbies" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">HOBBIES AND INTERESTS</h3>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>I am a crazy basketball & billiards fan. I also love watching NBA games——"Go Clippers, Champions!".</li>
-                  <li>I like the cartoon《Rick & Morty》, which is also where my English name came from.</li>
-                </ul>
-
-          <div class="image-container">
-            <img src="funny1.jpg" alt="Image 1" style="width: 200px; height: 200px;">
-            <img src="funny2.jpg" alt="Image 2" style="width: 200px; height: 200px;">
-            <img src="funny3.png" alt="Image 3" style="width: 200px; height: 200px;">
-
-
-
+            <div class="image-container">
+              <img class="hobby-image" src="funny1.jpg" alt="Image 1">
+              <img class="hobby-image" src="funny2.jpg" alt="Image 2">
+              <img class="hobby-image" src="funny3.png" alt="Image 3">
             </div>
+          </div>
 
-            <!-- REFERENCE SECTION
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">MY REFERENCES</h3>
-              <h4>Jane Doe, CEO at Company-Z</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>+0123456789</li>
-                <li>janedoe@companyz.com</li>
-              </ul>
-              <h4>Margaret Johnson, Manager at Company-Y</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>+9876543210</li>
-                <li>mjohnson@companyy.com</li>
-              </ul>
-            </div>            
-          </div> -->
-
-          <!--CONTACT SECTION-->
           <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT</h3>
-            <div class="w3-margin-top-2" style="font-weight: 500;">
+            <h3 class="section-heading w3-border-bottom w3-border-amber">CONTACT</h3>
+            <div class="contact-info w3-margin-top-2">
               <p>Name: Wenyi Zhang (Morty)</p>
               <p>Address: University of California, San Diego, CA 92092</p>
               <p>E-mail: wez049@ucsd.edu</p>
             </div>
           </div>
-<div style="text-align: center;">
-  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=h7iLFRCDGHEbTRSQRJkKlTs6pnyREar8MxhBmGCXWdA&cl=ffffff&w=a"></script>
-        <!-- 地图小部件代码结束 -->
-    </div>
-        <!--FOOTER-->
-        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. --> 
-        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p>© 2026.2 - Wenyi Zhang</p>
-          <p class="w3-small">I am immensely grateful for the unwavering support of my family, friends, and advisors! </p>
-          <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>  --> 
-        <!-- End footer --> 
-        </footer>
 
-        <!--END OF CV SECTION-->
+          <div class="cluster-map">
+            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=h7iLFRCDGHEbTRSQRJkKlTs6pnyREar8MxhBmGCXWdA&amp;cl=ffffff&amp;w=a"></script>
+          </div>
+
+          <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+            <p>© 2026.2 - Wenyi Zhang</p>
+            <p class="w3-small">I am immensely grateful for the unwavering support of my family, friends, and advisors! </p>
+          </footer>
+        </div>
       </section>      
     </section>
     <script>
-      // Function to toggle mobile navigation
       function toggleNavigation() {
         let nav = document.getElementById("mobile-nav");
         if (nav.classList.contains('w3-show')) {
@@ -487,9 +442,33 @@
           nav.classList.add('w3-show');
         }
       }
+
+      function setNewsFilter(filter, selectedButton) {
+        document.querySelectorAll('.news-entry').forEach(function(entry, index) {
+          entry.classList.toggle('hidden', filter === 'recent' && index >= 4);
+        });
+
+        document.querySelectorAll('.news-filter-button').forEach(function(button) {
+          button.classList.toggle('active', button === selectedButton);
+        });
+      }
+
+      function setPublicationFilter(filter, selectedButton) {
+        document.querySelectorAll('.publication-entry').forEach(function(entry) {
+          const isSatellite = entry.dataset.publicationTopic === 'satellite';
+          entry.classList.toggle('hidden', filter === 'selected' && !isSatellite);
+        });
+
+        document.querySelectorAll('.publication-filter-button').forEach(function(button) {
+          button.classList.toggle('active', button === selectedButton);
+        });
+      }
+
+      setNewsFilter('recent', document.querySelector('.news-filter-button'));
+      setPublicationFilter('selected', document.querySelector('.publication-filter-button'));
     </script>
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
     <script>
-      // Script to load feather icons
       feather.replace()
     </script>
   </body>
